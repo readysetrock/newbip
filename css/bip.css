@@ -1,0 +1,488 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+div ul li a img {
+    max-height: 100px;
+}
+
+.grid {
+    margin-top: 150px;
+    margin-left: 80px;
+    align-content: center; 
+}
+
+.wrapper {
+  width: 568px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+
+.iframe {
+    max-width: 100%;
+    max-height: auto;
+    border: 1px solid transparent;
+}
+
+.iframecss {
+    width: 800px;
+    height: 300px;
+    margin-top: 150px;
+    max-width: 100%;
+    max-height: auto;
+    border: 1px solid transparent;
+}
+
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+#filters {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+#sorts {
+  margin-left: 5px;
+
+}
+
+.container {
+    margin-top: 150px;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.1em 0.1em;
+  background: #EEE;
+  border: none;
+  border-radius: 10%;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+
+  border-radius: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+.header {
+    display: table;
+    position: relative;
+    background: red;
+    width: 100%;
+    height: 30px;
+    background: url() no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#logo-container img {
+   width: 100%;
+   height: auto;
+    
+}
+
+/* About */
+
+.about {
+    padding: 1px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 5px 0;
+}
+
+.service-item {
+    margin-bottom: 5px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 20px;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 10px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 10px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+.img-portfolio:hover {
+    opacity: 1.0;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+.img-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* ---- isotope ---- */
+.isotope {
+    border: 1px transparent #333;
+    margin: 0 auto;
+}
+
+.isotope div img {
+    height: 100%;
+    width: 100%;
+}
+/* clear fix */
+.isotope:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  padding: 0px;
+  background: #888;
+  color: #262524;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+  opacity: 0.0;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  opacity: 0.0;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  opacity: 0.0;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+  opacity: 0.0;
+}
+
+.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+
+.thumbnail {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 20px);
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.button-group,
+.button-group li{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.button-group{
+  font-size: 0; /* Inline block elements gap - fix */
+  padding: 0;
+  background: rgba(0, 0, 0, .05);
+  box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, .07);
+  padding: 5px !important;
+  border-radius: 5px; 
+}
+
+.button-group li{
+  margin-right: -1px; /* Overlap each right button border */
+}
+
+.button-group .uibutton{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 7px 17px;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  overflow: visible;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #777;
+  background: rgb(247,247,247); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(232,232,232,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(100%,rgba(232,232,232,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(232,232,232,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(232,232,232,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(232,232,232,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(247,247,247,1) 0%,rgba(232,232,232,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+  transition: background-color .2s ease-out;
+  background-clip: padding-box; /* Fix bleeding */
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3),
+              0 2px 2px -1px rgba(0, 0, 0, .5),
+              0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255, .9); 
+  font-size: 13px; /* Set the font size, different from inherited 0 */
+  border-radius: 0;  
+}
+
+.button-group .uibutton.active {
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset,
+              5px 0 5px -3px rgba(0, 0, 0, .2) inset,
+              -5px 0 5px -3px rgba(0, 0, 0, .2) inset;   
+  background: rgb(132,132,132); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(132,132,132,1) 0%, rgba(178,178,178,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(132,132,132,1)), color-stop(100%,rgba(178,178,178,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(132,132,132,1) 0%,rgba(178,178,178,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(132,132,132,1) 0%,rgba(178,178,178,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(132,132,132,1) 0%,rgba(178,178,178,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(132,132,132,1) 0%,rgba(178,178,178,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#848484', endColorstr='#b2b2b2',GradientType=0 ); /* IE6-9 */
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+  border: 1px solid #555;
+  
+  -webkit-animation-name: activeAnimation;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes activeAnimation {
+  0%   { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.button-group .uibutton:active{
+  background: #f0f0f0;  
+}
+
+.button-group li:first-child .uibutton{
+  border-radius: 3px 0 0 3px;
+}
+
+.button-group li:first-child .uibutton.active{
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset,
+              -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+.button-group li:last-child .uibutton{
+  border-radius: 0 3px 3px 0;
+}
+
+.button-group li:last-child .uibutton.active{
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset,
+              5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
