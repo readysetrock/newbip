@@ -12,6 +12,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" type="text/css" href="css/bip.css">
+      <link rel="stylesheet" type="text/css" href="css/overlay.css">
       <!-- Custom Fonts -->
       <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">  
       <!-- Tableau API Production -->
@@ -82,13 +83,35 @@
 
           <div class="grid text-center">
             <div class="isotope text-center">
-              <div class="element-item transition metal " data-category="transition">
-                <a href="#"><img src="img/thumbnailPNG/AlumniDashboard.png"></a>
-                <h3 class="name">Lead</h3>
-                <p class="symbol">Pb</p>
-                <p class="number">82</p>
-                <p class="weight">207.2</p>
+
+              <div class="container">
+
+                     <div class="content"> 
+
+                          
+                              <div class="element-item transition metal" data-category="transition">
+                                
+                                <a href="#" >
+                                  <div class="content-overlay"></div>
+                                    <img class="content-image" src="img/thumbnailPNG/AlumniDashboard.png">
+                                      <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title name">Alumni Dashboard</h3>
+                                        <p class="content-text">This is a short description</p>
+                                      </div>
+                                </a>
+
+                              </div>
+                      </div>
               </div>
+
+
+
+
+
+              
+
+
+
               <div class="element-item metalloid " data-category="metalloid">
                 <a href="#"><img src="img/thumbnailPNG/CollegeComparisonOverall.png"></a> 
                 <h3 class="name">Lead</h3>
@@ -236,6 +259,8 @@
                 <p class="weight">204.383</p>
               </div>
           </div>
+              
+              <div class="viz"></div>
   </div><!-- /.container-fluid -->
 
     <!-- jQuery -->
