@@ -27,7 +27,7 @@
 
     </head>
 <body onload="initViz();">
-  <div class="container">
+  <div class="container-fluid">
     <nav class="navbar navbar-default navbar-fixed-top">
       <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -76,29 +76,27 @@
               </ul>    
 
               
-              <ul class="nav navbar-nav navbar-right">
-                
-              </ul>
-              	
               
-
-
-            
+                
+              
+              	
+   
           </div><!-- /.navbar-collapse -->
     </nav>
-                <!-- filter buttons -->
-    <div id="filters" > 
-      <button class="download-itunes is-checked" data-filter="*">All Reports</button>
-      <button class="download-itunes" data-filter=".transition">Favorites</button>
-      <button class="download-itunes" data-filter=".metal" >Author</button>
-      <button class="download-itunes" data-filter=":not(.transition)">Date</button>
-    </div>
+   
+      
+                <!-- filter buttons --> 
+        <div id="filters" > 
 
-    <button class="thoughtbot">All Reports</button>
-    <button class="thoughtbot">Favorites</button>
-    <button class="thoughtbot">Project</button>
-    <button class="thoughtbot">Date</button>
-          
+          <button class="thoughtbot is checked" data-filter="*">All Reports</button>
+          <button class="thoughtbot" data-filter=".transition">Favorites</button>
+          <button class="thoughtbot" data-filter=".metal" >Project</button>
+          <button class="thoughtbot" data-filter=":not(.transition)">Date</button>
+
+        </div>
+
+
+       
 
     <div class="grid text-center">
         <div class="isotope text-center">
