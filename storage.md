@@ -9,14 +9,17 @@
                 broke the whole site
                 rebuilt/debugged site to stable
 
-                built new:
-                	Buttons
+Green Buttons
+Search Box
+Updated Report Divs
 
 
                 access level can't reach all reports
-xc
+				Search Button
+				Contact Button/Form
+				Project Button
 
 
-Search Button
-Contact Button/Form
-Project Button
+
+              <div id="vizContainer"></div>
+              <div class="viz"></div>
