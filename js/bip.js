@@ -1,5 +1,4 @@
 // buttons
-
 $(function(){
   $(".uibutton").click(function(e){
     e.preventDefault();
@@ -9,7 +8,6 @@ $(function(){
 
 
 // external js: isotope.pkgd.js
-
 $( document ).ready( function() {
   // init Isotope
   var $container = $('.isotope').isotope({
@@ -70,18 +68,30 @@ var viz, workbook;
 
 window.onload=function() {
     var vizDiv = document.getElementById('viz');
-    var vizURL = 'https://insightwdev.usfca.edu/#/projects/';
+    var vizURL = 'https://dataviz.usfca.edu/#/views/FacultyUnitAnalysis/CollegeComparisonOverall/';
     var options = {
-        width: '600px',
-        height: '540px',
-        hideToolbar: true,
-        hideTabs: true
+        width: '90%',
+        height: 'auto',
+        hideToolbar: false,
+        hideTabs: false
     }
 viz = new tableauSoftware.Viz(vizDiv,vizURL, options);
 }
 
-function initViz() {
-          var containerDiv = document.getElementById("vizContainer"),
-          url = "https://insightwdev.usfca.edu/#/projects/34/workbooks";
-          var viz = new tableau.Viz(containerDiv, url); 
-          }
+
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "https://dataviz.usfca.edu/#/views/FacultyUnitAnalysis/CollegeComparisonOverall",
+                options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+            
+            var viz = new tableau.Viz(containerDiv, url, options); 
+            // Create a viz object and embed it in the container div.
+        }
+
+
+

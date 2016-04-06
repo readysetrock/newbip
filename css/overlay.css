@@ -26,14 +26,14 @@ body{
 .content {
   position: relative;
   width: 90%;
-  max-width: 400px;
+  max-width: 150px;
   margin: auto;
   overflow: hidden;
 }
 
 .content .content-overlay {
   background: rgba(0,0,0,0.7);
-  position: absolute;
+  position: relative;
   height: 99%;
   width: 100%;
   left: 0;
@@ -94,14 +94,88 @@ body{
   top: 80%;
 }
 
-.fadeIn-top{
-  top: 20%;
+
+/* Buttons */
+button.download-itunes {
+  background-color: #00543C;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #52a8e8), color-stop(100%, #377ad0));
+  background-image: -webkit-linear-gradient(top, #00543C, #00543C);
+  background-image: -moz-linear-gradient(top, #00543C, #00543C);
+  background-image: -ms-linear-gradient(top, #00543C, #00543C);
+  background-image: -o-linear-gradient(top, #00543C, #00543C);
+  background-image: linear-gradient(top, #00543C, #00543C);
+  border-top: 1px solid #4081af;
+  border-right: 1px solid #2e69a3;
+  border-bottom: 1px solid #20559a;
+  border-left: 1px solid #2e69a3;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  -moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  color: #fff;
+  font: normal 11px "lucida grande", sans-serif;
+  line-height: 1;
+  padding: 3px 5px;
+  text-align: center;
+  text-shadow: 0 -1px 1px #00543C;
+  width: 112px;
+  -webkit-background-clip: padding-box; }
+  button.download-itunes:hover {
+    background-color: #FDBB30;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e9ee5), color-stop(100%, #FDBB30));
+    background-image: -webkit-linear-gradient(top, #FDBB30 0%, ##FDBB30 100%);
+    background-image: -moz-linear-gradient(top, ##FDBB30 0%, #FDBB30 100%);
+    background-image: -ms-linear-gradient(top, #FDBB30 0%, #FDBB30 100%);
+    background-image: -o-linear-gradient(top, #FDBB30 0%, ##FDBB30 100%);
+    background-image: linear-gradient(top, #3e9ee5 0%, #FDBB30 100%);
+    border-top: 1px solid #FDBB30;
+    border-right: 1px solid #FDBB30;
+    border-bottom: 1px solid #FDBB30;
+    border-left: 1px solid #FDBB30;
+    -webkit-box-shadow: inset 0 1px 0 0 #FDBB30;
+    -moz-box-shadow: inset 0 1px 0 0 #FDBB30;
+    box-shadow: inset 0 1px 0 0 #FDBB30;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #FDBB30;
+    -webkit-background-clip: padding-box; }
+  button.download-itunes:active {
+    background: #FDBB30;
+    border: 1px solid #FDBB30;
+    border-bottom: 1px solid #FDBB30;
+    -webkit-box-shadow: inset 0 0 6px 3px #FDBB30, 0 1px 0 0 white;
+    -moz-box-shadow: inset 0 0 6px 3px #FDBB30, 0 1px 0 0 white;
+    box-shadow: inset 0 0 6px 3px #FDBB30, 0 1px 0 0 white;
+    text-shadow: 0 -1px 1px #FDBB30;
+    -webkit-background-clip: padding-box; }
+
+button[disabled].download-itunes,
+button[disabled].download-itunes:hover,
+button[disabled].download-itunes:active {
+  background-color: #dadada;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dadada), color-stop(100%, #f3f3f3));
+  background-image: -webkit-linear-gradient(top, #dadada, #f3f3f3);
+  background-image: -moz-linear-gradient(top, #dadada, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #dadada, #f3f3f3);
+  background-image: -o-linear-gradient(top, #dadada, #f3f3f3);
+  background-image: linear-gradient(top, #dadada, #f3f3f3);
+  border-top: 1px solid #c5c5c5;
+  border-right: 1px solid #cecece;
+  border-bottom: 1px solid #FDBB30;
+  border-left: 1px solid #FDBB30;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #FDBB30;
+  cursor: not-allowed;
+  text-shadow: 0 -1px 1px #ebebeb; }
+
+button.download-itunes::-moz-focus-inner {
+  border: 0;
+  padding: 0; 
 }
 
-.fadeIn-left{
-  left: 20%;
-}
+button.download-itunes {
+  margin-top: 10px; }
 
-.fadeIn-right{
-  left: 80%;
-}
