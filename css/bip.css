@@ -25,16 +25,19 @@ body {
     font-family: "Source Sans Pro","Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-nav {
+body div nav {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   margin-right: 2px;
   margin-left: 2px;
+  
 
 }
 
 div ul li a img {
     height: 80px;
+
+
 }
 
 .container-fluid{

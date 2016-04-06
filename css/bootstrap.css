@@ -240,6 +240,7 @@ th {
   }
   .navbar {
     display: none;
+    margin-bottom: 200px solid #FDBB30;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
