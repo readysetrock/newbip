@@ -26,14 +26,15 @@ body {
 }
 
 nav {
-  font-family: 'impact', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   margin-right: 2px;
   margin-left: 2px;
+  margin-bottom: 10px solid #00543C;
 }
 
 div ul li a img {
-    max-height: 100px;
+    height: 100px;
 }
 
 .container{
@@ -43,7 +44,7 @@ div ul li a img {
 }
 
 .grid {
-    margin-top: 1px;
+    margin-top: 10px;
     margin-left: 40px;
     align-content: center; 
 
@@ -80,9 +81,10 @@ iframe {
 }
 
 #filters {
-    margin-bottom: 0px;
-    margin-top: 125px;
-    margin-left: 75px;
+    
+    margin-top: 85px;
+    margin-left: 45px;
+    margin-bottom: 0;
 }
 #sorts {
   margin-left: 5px;
@@ -316,7 +318,9 @@ hr.small {
     clear: both;
 }
 
-/* ---- .element-item ---- */
+/* ---- .
+
+-item ---- */
 
 .element-item {
   position: relative;

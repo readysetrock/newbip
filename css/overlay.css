@@ -25,8 +25,8 @@ body{
 
 .content {
   position: relative;
-  width: 90%;
-  max-width: 300px;
+  width: 100%;
+  width: 250px;
   margin: auto;
   overflow: hidden;
 }
@@ -34,8 +34,8 @@ body{
 .content .content-overlay {
   background: rgba(0,0,0,0.7);
   position: absolute;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   left: 0;
   top: 0;
   bottom: 0;
@@ -47,7 +47,7 @@ body{
 }
 
 .content:hover .content-overlay{
-  opacity: .9;
+  opacity: .7;
 }
 
 .content-image{
@@ -59,7 +59,7 @@ body{
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
-  width: 300px;
+  width: 250px;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -83,7 +83,7 @@ body{
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
-  font-size: 1.80em;
+  font-size: 2em;
 }
 
 .content-details p{
@@ -96,6 +96,6 @@ body{
 }
 
 img {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
 }
