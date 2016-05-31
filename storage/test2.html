@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>USF Data</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+​
+      $.getJSON('https://spreadsheets.google.com/feeds/list/1UnxjqmqV8AFOE1QhPBKTu9PLb_io17wnzVBxwkn2xho/od6/public/values?alt=json', function(data){
+         console.log(data);
+         
+         // three rows
+         console.log(data.feed.entry);
+         rows = data.feed.entry;
+​
+         for(var i = 0; i < rows.length; i++){
+            //console.log(rows[i].gsx$product.$t, rows[i].gsx$price.$t, rows[i].gsx$quantity.$t);
+            $("#content").append("<tr><td>" + rows[i].gsx$term.$t + "</td><td>" + rows[i].gsx$definition.$t + "</td></tr>");
+         }
+      })
+​
+   });
+   </script>
+​
+</head>
+<body>
+​
+   <table>
+      <thead>
+         <th>Term</th>
+         <th>Definition</th>
+​
+      </thead>
+      <tbody id="content">
+​
+​
+​
+      </tbody>
+   </table>
+​
+</body>
+</html>

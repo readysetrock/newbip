@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en-US">
+  <head >
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +15,14 @@
     <!-- Custom Fonts -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">  
 
+    <script>
+    function sheetLoaded(spreadsheetdata) {
+    // do something with spreadsheet data here
+    
+      console.log(spreadsheetdata);
+    }
+    </script>
+
 
 
       
@@ -22,63 +30,51 @@
 
 <body>
   <div class="container-fluid">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-              <ul class="nav navbar-nav">        
-                <li>
-                  <a href="/index.html" class="pull-left">
-                  <img type="image/png" src="img/usflogolgtrans.png" alt="USF">
-                  </a>
-                </li>      
-              </ul>    
+  <div class="results"></div> 
+ 
+<script>
+ 
+ // ID of the Google Spreadsheet
+ var spreadsheetID = "1KhEXZKo6Nqw10VPQRzyEES0lq3lJ2UJIsLeanO93gUY";
+ 
+ // Make sure it is public or set to Anyone with link can view 
+ var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+ 
+ $.getJSON(url, function(data) {
+ 
+  var entry = data.feed.entry;
+ 
+  $(entry).each(function(){
+    // Column names are name, age, etc.
+    $('.results').prepend('<h2>'+this.gsx$term.$t+'</h2><p>'+this.gsx$name.$t+'</p>');
+  });
+ 
+ });
+ 
+</script>
 
-              
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="index.html">HOME</a>
-                </li>
-                <li>
-                  <a href="https://dataviz.usfca.edu/#/projects">REPORTS</a>
-                </li>
-                <li>
-                  <a href="glossary.html">GLOSSARY</a></li>
-                <li>
-                  <a href="https://dataviz.usfca.edu/#/projects">LOGIN</a>
-                </li>
-              </ul> 
-          </div><!-- /.navbar-collapse -->
-    </nav>
   
             <div class="containter-fluid text-center">
-            <frameset>
+
+              <script src="https://spreadsheets.google.com/feeds/worksheets/1AeHpuH7M3XtIiu0kcM4ve6SmPARMaPIcEI5gHbDpiko/public/full/od6?fields=term,definition">
+              
+              </script>
             
-              <iframe class="iframecss" src="https://docs.google.com/spreadsheets/d/11DMoRRXrXwg8Yx9YyY2QSdFxlC9ZOrefMRnPMbeHymI">
+
+              <script src="https://spreadsheets.google.com/feeds/cells/1AeHpuH7M3XtIiu0kcM4ve6SmPARMaPIcEI5gHbDpiko/od6/public/values?alt=json-in-script&callback=sheetLoaded">
                 
-              </iframe>
-            </frameset>
-              <!-- Footer -->
-              <footer></footer>
-            </div>
+              </script>
+
+            
+
 
   </div><!-- /.container-fluid -->
 
-  <script>window.jQuery || document.write('<script src="/jquery.js"><\/script>')</script>
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <script src="js/glossary.js"></script>
 
 </body >

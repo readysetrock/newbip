@@ -1,0 +1,64 @@
+body {
+	width: 300px;
+  	height: 100%;
+	padding: 2px;
+  	font-family: "Source Sans Pro", sans-serif;
+  	background: #d3d3d3;
+
+}
+aside {
+	background: #ffffff;
+	height: 855px;
+	width: 220px;
+	margin-top: 50px;
+}
+
+.content {
+    border-radius: 5%;
+    height: auto;
+    width: 180px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.usfbutton {
+  max-width: 180px;
+  height: 180px;
+  border-radius: 5%;
+}
+
+.usfbutton1 {
+  max-width: 180px;
+  height: 180px;
+  border-radius: 5%;
+}
+
+.usfbutton a h3 span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2em;
+  transform: translate(-50%, -50%);
+}
+
+.usfbutton1 a h3 span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2em;
+  transform: translate(-50%, -50%);
+}
+
+
